@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Fire Data Input</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 50px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Forest Fire Data</h1>
+        <form id="dataForm" method="POST">
+            <h3>
+                The predicted value of FWI (Fire Weather Index) is : {{result}}
+            </h3>
+            <div class="form-group">
+                <label for="temperature">Temperature:</label>
+                <input type="text" id="temperature" name="temperature" required>
+            </div>
+            <div class="form-group">
+                <label for="rh">Relative Humidity (RH):</label>
+                <input type="text" id="rh" name="rh" required>
+            </div>
+            <div class="form-group">
+                <label for="ws">Wind Speed (Ws):</label>
+                <input type="text" id="ws" name="ws" required>
+            </div>
+            <div class="form-group">
+                <label for="rain">Rain:</label>
+                <input type="text" id="rain" name="rain" required>
+            </div>
+            <div class="form-group">
+                <label for="ffmc">FFMC:</label>
+                <input type="text" id="ffmc" name="ffmc" required>
+            </div>
+            <div class="form-group">
+                <label for="dmc">DMC:</label>
+                <input type="text" id="dmc" name="dmc" required>
+            </div>
+            <div class="form-group">
+                <label for="isi">ISI:</label>
+                <input type="text" id="isi" name="isi" required>
+            </div>
+            <div class="form-group">
+                <label for="classes">Classes:</label>
+                <input type="text" id="classes" name="classes" required>
+            </div>
+            <div class="form-group">
+                <label for="region">Region:</label>
+                <input type="text" id="region" name="region" required>
+            </div>
+            <button type="submit">Submit</button>
+    </div>
+</body>
+</html>

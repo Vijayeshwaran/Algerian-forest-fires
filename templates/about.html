@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Machine Learning Web Application</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .main {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        .main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .main p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .main ul {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>About</h1>
+    </div>
+    <div class="main">
+        <h2>Dataset Summary</h2>
+        <p>The dataset contains 243 records of forest fires in Algeria, with the following features:</p>
+        <ul>
+            <li>Date Columns: day, month, year</li>
+            <li>Weather Conditions: Temperature, Relative Humidity (RH), Wind Speed (Ws), Rain</li>
+            <li>Fire Weather Index Components: Fine Fuel Moisture Code (FFMC), Duff Moisture Code (DMC), Drought Code (DC), Initial Spread Index (ISI), Build-Up Index (BUI), Fire Weather Index (FWI)</li>
+            <li>Classification: Classes (fire or not fire)</li>
+            <li>Region: Geographic region (0 or 1)</li>
+        </ul>
+
+        <h2>Exploratory Data Analysis (EDA) Summary</h2>
+        <p>The EDA was conducted to understand the distribution and relationships of the features in the dataset. Key steps included:</p>
+        <ul>
+            <li>Data Cleaning: Ensuring no missing values and consistent data types.</li>
+            <li>Visualizations: Creating plots such as histograms, box plots, scatter plots, and correlation heatmaps to identify patterns and relationships among features.</li>
+            <li>Feature Engineering: Transforming raw data into meaningful features for machine learning models.</li>
+        </ul>
+
+        <h2>Model Building Summary</h2>
+        <p>The model building process involved:</p>
+        <ul>
+            <li>Data Splitting: Dividing the data into training and testing sets.</li>
+            <li>Model Selection: Choosing appropriate machine learning algorithms (e.g., logistic regression, decision trees, random forests, etc.).</li>
+            <li>Model Training: Fitting the model to the training data.</li>
+            <li>Model Evaluation: Assessing model performance using metrics such as mean absolute error, r2_score.</li>
+        </ul>
+    </div>
+</body>
+</html>
